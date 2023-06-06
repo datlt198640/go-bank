@@ -45,6 +45,9 @@ jobs:
         sudo apt-get install migrate
         which migrate
 
+    - name: Run Postgres Container
+      run: make postgres
+
     - name: Run CreateDB
       run: make createdb
 
