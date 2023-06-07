@@ -19,4 +19,7 @@ sqlc:
 test:
 	go test -v -cover ./...
 
-.PHONY: postres createdb drop migrateup migratedown sqlc test
+server:
+	go run main.go
+
+.PHONY: postres createdb drop migrateup migratedown sqlc test server
